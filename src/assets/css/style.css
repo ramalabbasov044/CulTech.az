@@ -295,4 +295,7 @@ header{
     .hakaton_list_body{
         width: 100%;
     }
+    .about_right img{
+        width: 120px;
+    }
 }

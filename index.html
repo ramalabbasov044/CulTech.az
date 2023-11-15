@@ -35,6 +35,36 @@
                 </li>
             </ul>
         </div>
+        <div id="menu" class="menu">
+            <img src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png" alt="">
+        </div>
+        <div id="list_body" class="list_body">
+            <div class="close_menu">
+                X
+            </div>
+            <ul>
+                <li>
+                    <a href="#haqqimizda">
+                        Haqqimizda
+                    </a>
+                </li>
+                <li>
+                    <a href="#problemler">
+                        Problemlər
+                    </a>
+                </li>
+                <li>
+                    <a href="#mentorlar">
+                        Mentorlar
+                    </a>
+                </li>
+                <li>
+                    <a href="#musabiqe">
+                        Müsabiqə
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
         <main>
@@ -218,8 +248,18 @@
             </section>
         </main>
 
-    <footer>
+    <script>
+        const close_menu = document.querySelector(".close_menu")
+        const list_body = document.querySelector("#list_body")
+        const menu = document.querySelector("#menu")
 
-    </footer>
+        menu.addEventListener('click',function(){
+            list_body.classList.add("show")
+        })
+        
+        close_menu.addEventListener('click',function(){
+            list_body.classList.remove("show")
+        })
+    </script>
 </body>
 </html>

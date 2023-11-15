@@ -256,9 +256,11 @@ header{
     }
     .about_main_title{
         text-align: center;
+        font-size: 22px;
     }
     .about_description{
         text-align: center;
+        font-size: 13px;
     }
     .about_description2{
         text-align: center;
@@ -298,4 +300,23 @@ header{
     .about_right img{
         width: 120px;
     }
+    .mentors{
+        padding: 35px 30px;
+    }
+    .musabiqe{
+        padding: 35px 30px;
+    }
+    .hakaton{
+        padding: 35px 30px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .problems_box_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mentors_card_body{
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }

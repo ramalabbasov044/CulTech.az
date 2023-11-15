@@ -158,8 +158,6 @@ header{
 
 .mentors{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 80px 66px;
 }
@@ -200,8 +198,6 @@ header{
 .musabiqe{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 80px 66px;
 }
 
@@ -238,11 +234,65 @@ header{
     }
 }
 
+.qeydiyyat_body{
+    text-decoration: none;
+}
+
 @media screen and (max-width:1240px){
     .mentors_card_body{
         grid-template-columns: repeat(3,1fr);
     }
     .problems_box {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .listBody{
+        display: none;
+    }
+    .about_body{
+        flex-direction: column-reverse;
+    }
+    .about_main_title{
+        text-align: center;
+    }
+    .about_description{
+        text-align: center;
+    }
+    .about_description2{
+        text-align: center;
+    }
+    .qeydiyyat_body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .problems_box_content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mentors_card_body{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about_body{
+        padding: 25px 30px;
+    }
+    .problems_body{
+        padding: 35px 30px;
+        margin-top: 35px;
+    }
+    .problems_head_title{
+        text-align: center;
+    }
+    .problems_description{
+        text-align: center;
+        max-width: 100%;
+    }
+    .hakaton_list_body{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hakaton_list_body{
+        width: 100%;
     }
 }

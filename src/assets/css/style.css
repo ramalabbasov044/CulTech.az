@@ -161,6 +161,33 @@ header{
         color: var(--cyan);
     }
 }
+/* tarix */
+
+.tarix_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 66px 40px 66px;
+    background: #fff;
+}
+
+.tarix_items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tarix_items .item{
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid var(--cyan);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 /* problems */
 
@@ -393,6 +420,14 @@ header{
 }
 
 @media screen and (max-width:992px){
+    .tarix_items{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .tarix_items .item{
+        text-align: center !important;
+        font-size: 13px !important;
+    }
     .hakaton_items_body{
         flex-direction: column;
     }

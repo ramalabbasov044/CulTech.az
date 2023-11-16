@@ -109,7 +109,7 @@ header{
 
 .about_body{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 70px 66px;
     background: #fff;
@@ -118,6 +118,8 @@ header{
 .about_left{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
 }
 
 .about_main_title{
@@ -167,7 +169,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 66px;
+    padding: 0px 66px;
     background: #fff;
 }
 
@@ -234,6 +236,50 @@ header{
     flex-direction: column;
     cursor: pointer;
     border-radius: 7px;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 90.7%;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.content:hover {
+    opacity: 1;
+}
+
+.fa-brands .fa-linkedin::before {
+    font-size: 40px;
+}
+
+.linkedln {
+    font-size: 30px;
+    color: rgb(30, 48, 80);
+}
+
+.content > * {
+    transform: translateY(45px);
+    transition: transform 0.6s;
+}
+
+.content:hover > * {
+    transform: translateY(0px);
+}
+
+.linkedln{
+    color: white;
 }
 
 .mentors_card img{
@@ -257,27 +303,33 @@ header{
 .musabiqe{
     display: flex;
     flex-direction: column;
-    padding: 80px 66px;
+    padding: 0px 66px;
 }
 
 .hakaton{
-    padding: 70px 100px;
+    padding: 40px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
 }
 
-.hakaton_list_body{
+.hakaton_list_body1{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
     margin-top: 20px;
 }
 
-.hakaton_list_body li{
-    border: 1px solid var(--cyan);
+.hakaton_list_body2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hakaton_list_body1 li{
+    border: 2px solid var(--cyan);
     border-radius: 7px;
     background: #fff;
     padding: 14px;
@@ -285,13 +337,39 @@ header{
     color: var(--black);
     font-weight: 600;
     font-size: 14px;
+    height: 90px;
 
     &:hover{
-        border: 1px solid var(--black);
+        border: 2px solid var(--black);
         color: var(--cyan);
         cursor: pointer;
     }
 }
+
+.hakaton_list_body2 li{
+    border: 2px solid #19728e;
+    border-radius: 7px;
+    background: #fff;
+    padding: 14px;
+    list-style-type: none;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+    height: 90px;
+
+    &:hover{
+        border: 2px solid var(--black);
+        color: var(--cyan);
+        cursor: pointer;
+    }
+}
+
+.hakaton_items_body{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 
 .qeydiyyat_body{
     text-decoration: none;
@@ -304,9 +382,29 @@ header{
     .problems_box {
         font-size: 13px;
     }
+    .hakaton_list_body1 li{
+        font-size: 14px;
+        height: 120px;
+    }
+    .hakaton_list_body2 li{
+        font-size: 14px;
+        height: 120px;
+    }
 }
 
 @media screen and (max-width:992px){
+    .hakaton_items_body{
+        flex-direction: column;
+    }
+    .hakaton_list_body1{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .about_left{
+        align-items: center ;
+    }
+    .about_body{
+        align-items: center;
+    }
     .listBody{
         display: none;
     }
@@ -374,6 +472,20 @@ header{
 }
 
 @media screen and (max-width:550px){
+    .hakaton_list_body1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hakaton_list_body1 li{
+        font-size: 12px;
+        height: 100px;
+    }
+    .hakaton_list_body2 li{
+        font-size: 12px;
+        height: 100px;
+    }
+    .hakaton_items_body{
+        gap: 20px;
+    }
     .problems_box_content{
         grid-template-columns: repeat(1,1fr);
     }

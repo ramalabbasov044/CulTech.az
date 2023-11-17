@@ -231,6 +231,7 @@ header{
 }
 
 .problems_box{
+    height: fit-content;
     border-radius: 25px;
     padding: 20px 20px;
     border: 1px solid var(--cyan);
@@ -496,6 +497,19 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#about_description2{
+    font-weight: 400;
+}
+
+.problems_item{
+    display: none;
+}
+
+.problems_box.show .problems_item{
+    display: flex !important;
+    margin-top: 10px;
 }
 
 @media screen and (max-width:1240px){

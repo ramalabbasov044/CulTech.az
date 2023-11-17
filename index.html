@@ -75,7 +75,11 @@
                         Proqram haqqında
                     </p>
                     <p class="about_description">
-                        Azərbaycanda ilk dəfə Azərbaycan Respublikasının Mədəniyyət Nazirliyi və SUP.VC ilə birgə təşkil olunacaq “CulTech Hakatonu” kreativ sektorda olan problemlərə innovativ həll yolları tapmağa çalışan komandaları birləşdirən proqram keçiriləcək və 48 saat ərzində intensiv davam edib yaradıcı məhsulların təqdimatı ilə sonlanacaqdır.
+                        Azərbaycanda ilk dəfə kreativ sektorda olan problemlərə innovativ həll yolları tapmağa çalışan komandaları bir araya gətirən  “CulTech Hakatonu” təşkil olunacaq.
+                        Hakaton zamanı 48 saat boyunca iştirakçılar mentor dəstəyi alıb və öz innovativ məhsullarının prototiplərini hazırlamış olacaqlar. Ən sonda keçiriləcək müsabiqədə isə münsiflər heyyəti tərəfindən seçilmiş komandalar mükafatla təltif olunacaq.     
+                    </p>
+                    <p class="about_description" id="about_description2">
+                        Qeyd: Hakaton Azərbaycan Respublikası Mədəniyyət Nazirliyinin və "SUP VC" şirkətinin birgə təşkilatçılığı ilə "Yaradıcı Həftə" çərçivəsində reallaşacaq.
                     </p>
                     <a class="qeydiyyat_body" href="https://docs.google.com/forms/d/17D6vF0MLud7ZaSO8cqm-I1wJPZXEBquTI9KDDUGf88Q/edit">
                         <button class="qeydiyyat_button">
@@ -112,55 +116,55 @@
                 <div class="problems_box_content">
                     <div class="problems_box">
                         Rəqəmsal Mədəni irsin Qoruması: 
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Texnologiyadan istifadə edərək mədəni irsi, artefaktları və ya tarixi qeydləri rəqəmsallaşdırmaq, arxivləşdirmək və qorumaq üçün innovativ həllər hazırlayın.
                         </p>
                     </div>
                     <div class="problems_box">
                         Mədəniyyət və incəsənətlə bağlı məzmunun yaradılması və paylanması: 
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Rəqəmsal platformalar və yeni texnologiyalar vasitəsilə incəsənət, musiqi və ya ədəbiyyat kimi mədəni məzmunun paylanmasını yaxşılaşdırmaq;
                         </p>
                     </div>
                     <div class="problems_box">
                         Muzeylər və Qalereyalar üçün Artırılmış Reallıq (AR):
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Eksponatlarla bağlı informativ və interaktiv məzmun təmin etmək üçün AR-dan istifadə edərək muzey və qalereyalarda ziyarətçi təcrübəsini artırmaq;
                         </p>
                     </div>
                     <div class="problems_box">
                         Dil və Mədəniyyət Mübadiləsi Platformaları:
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Dil mübadiləsi, mədəni anlaşma və qarşılıqlı öyrənmə üçün müxtəlif mədəniyyətlərdən olan insanları birləşdirən platformalar dizayn etmək;
                         </p>
                     </div>
                     <div class="problems_box">
                         Teatr və Tamaşa İncəsənətində Virtual Reallıq (VR):
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             VR-nin teatr və tamaşa sənətlərində tətbiqi;
                         </p>
                     </div>
                     <div class="problems_box">
                         Mədəniyyət və incəsənətlə bağlı Dayanıqlılıq və İnklüzivlik:
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Yaradıcı və mədəni sənayelərdə mədəni davamlılığı, inklüzivliyi və müxtəlifliyi təşviq edən strategiyalar və alətlər hazırlamaq;
                         </p>
                     </div>
                     <div class="problems_box">
                         Mədəniyyət və incəsənətlə bağlı Turizmin Təkmilləşdirilməsi:
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Bələdçili turlar, tarixi ərazilərə səfərlər və mədəniyyət festivalları kimi mədəni turizm təcrübələrini artırmaq üçün texnologiyadan istifadə etmək;
                         </p>
                     </div>
                     <div class="problems_box">
                         Mədəniyyət və incəsənətlə bağlı Təhsil Vasitələri:
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Müxtəlif mədəniyyətlər və onların tarixi haqqında öyrənməni cəlbedici və əlçatan edən təhsil alətləri və platformaları yaratmaq;Müxtəlif mədəniyyətlər və onların tarixi haqqında öyrənməni cəlbedici və əlçatan edən təhsil alətləri və platformaları yaratmaq;
                         </p>
                     </div>
                     <div class="problems_box">
                         Mədəniyyət və incəsənətlə bağlı Məlumat Analitikası:
-                        <p>
+                        <p class="problems_item" id="problems_item">
                             Yaradıcılıq və mədəniyyət sektorunda mədəni tendensiyaları, tamaşaçı seçimlərini və bazar fikirlərini daha yaxşı başa düşmək və istifadə etmək üçün data analitikası həlləri hazırlamaq
                         </p>
                     </div>
@@ -363,6 +367,7 @@
     <script>
         const close_menu = document.querySelector(".close_menu")
         const list_body = document.querySelector("#list_body")
+        const problems_box = document.querySelectorAll(".problems_box")
         const menu = document.querySelector("#menu")
 
         menu.addEventListener('click',function(){
@@ -372,6 +377,10 @@
         close_menu.addEventListener('click',function(){
             list_body.classList.remove("show")
         })
+
+        problems_box.forEach((item) => item.addEventListener('click',function(){
+            item.classList.toggle("show")
+        }))
     </script>
 </body>
 </html>

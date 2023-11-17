@@ -411,8 +411,8 @@ header{
 /* terefdaslar */
 
 .terefdaslar{
-    padding: 40px 100px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid var(--black);
@@ -422,9 +422,12 @@ header{
     color: var(--cyan);
     font-weight: 600;
     margin-bottom: 10px;
+    font-size: 26px;
 }
 
 .terfedaslar_item{
+    width: 100%;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -436,11 +439,32 @@ header{
     text-align: center;
 }
 
+#terfedaslar_item2{
+    border-top: 1px solid var(--black);
+}
+
+.terfedaslar_item a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
 .terfedaslar_item_main{
     display: flex;
-    gap: 50px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.instagram_icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--cyan);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media screen and (max-width:1240px){

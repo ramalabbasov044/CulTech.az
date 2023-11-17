@@ -168,8 +168,10 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 66px 40px 66px;
+    padding: 20px 66px 40px 66px;
     background: #fff;
+    border-top: 1px solid var(--black);
+
 }
 
 .tarix_items{
@@ -196,8 +198,9 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 66px;
+    padding: 40px 66px;
     background: #fff;
+    border-top: 1px solid var(--black);
 }
 
 .problems_head_title{
@@ -248,6 +251,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: 80px 66px;
+    border-top: 1px solid var(--black);
 }
 
 .mentors_card_body{
@@ -330,7 +334,8 @@ header{
 .musabiqe{
     display: flex;
     flex-direction: column;
-    padding: 0px 66px;
+    padding: 40px 66px;
+    border-top: 1px solid var(--black);
 }
 
 .hakaton{
@@ -339,6 +344,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top: 1px solid var(--black);
 }
 
 .hakaton_list_body1{
@@ -402,7 +408,45 @@ header{
     text-decoration: none;
 }
 
+/* terefdaslar */
+
+.terefdaslar{
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--black);
+}
+
+.terfedaslar_item_head{
+    color: var(--cyan);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.terfedaslar_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.terfedaslar_item_main{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:1240px){
+    .terefdaslar{
+        justify-content: space-between;
+    }
     .mentors_card_body{
         grid-template-columns: repeat(3,1fr);
     }
@@ -420,6 +464,11 @@ header{
 }
 
 @media screen and (max-width:992px){
+    .terefdaslar{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    }
     .tarix_items{
         flex-direction: column;
         gap: 30px;

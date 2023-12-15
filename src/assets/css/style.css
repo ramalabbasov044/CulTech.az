@@ -24,6 +24,27 @@ header{
     background: #fff;
 }
 
+.hakaton_box_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.hakaton_box{
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
 .logo img{
     width: 250px;
 }
@@ -229,7 +250,13 @@ header{
     margin-top: 70px;
     gap: 30px;
 }
-
+.problems_box_content2{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 70px;
+    gap: 30px;
+}
 .problems_box{
     height: fit-content;
     border-radius: 25px;
@@ -591,6 +618,9 @@ header{
     .problems_box_content{
         grid-template-columns: repeat(2,1fr);
     }
+    .problems_box_content2{
+        grid-template-columns: repeat(2,1fr);
+    }
     .mentors_card_body{
         grid-template-columns: repeat(2,1fr);
     }
@@ -647,6 +677,9 @@ header{
         gap: 20px;
     }
     .problems_box_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .problems_box_content2{
         grid-template-columns: repeat(1,1fr);
     }
     .mentors_card_body{

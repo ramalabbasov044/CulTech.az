@@ -63,7 +63,8 @@ header{
     border: 1px solid var(--cyan);
     color: var(--cyan);
     text-decoration: none;
-    padding: 40px 130px;
+    width: 75%;
+    padding: 60px 0px;
     display: flex;
     justify-content: center;
     align-items: center;

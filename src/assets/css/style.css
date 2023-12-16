@@ -24,6 +24,31 @@ header{
     background: #fff;
 }
 
+.awards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.awards_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.awards_box img{
+    width: 310px;
+    height: 260px;
+}
+
+.awards_title{
+    color: var(--cyan);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .hakaton_box_body{
     display: flex;
     justify-content: center;
